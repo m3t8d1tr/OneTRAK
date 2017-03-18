@@ -49,7 +49,7 @@ class ViewController: UIViewController {
         labelCounter.text = "#"
         total = 0
         labelResult.text = "результат"
-    
+        fieldInput.text = "Введите число"
     }
     
 }
