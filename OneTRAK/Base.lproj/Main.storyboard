@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OneTRAK" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GLA-lL-OcT">
+                                <rect key="frame" x="0.0" y="53" width="320" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="7H3-7w-QbR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DgG-fn-kDc">
+                                <rect key="frame" x="16" y="76" width="288" height="137"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HyK-TT-82U">
+                                        <rect key="frame" x="148" y="1" width="140" height="60"/>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="DvX-qR-eiV"/>
+                                            <constraint firstAttribute="width" constant="140" id="IOm-0b-sbu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Введите число" borderStyle="roundedRect" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="13" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="vYU-dF-crO" customClass="CustomUITextField" customModule="OneTRAK" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="69" width="140" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="140" id="GWX-Ku-ci6"/>
+                                            <constraint firstAttribute="height" constant="30" id="fER-72-QD8"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8E-au-nDW">
+                                        <rect key="frame" x="148" y="69" width="140" height="30"/>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="C9W-fm-Kdt"/>
+                                            <constraint firstAttribute="width" constant="140" id="ndM-Hv-13u"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Посчитать"/>
+                                        <connections>
+                                            <action selector="buttonProcess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dwj-cH-8l0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62i-T6-nIS">
+                                        <rect key="frame" x="0.0" y="107" width="288" height="30"/>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="X2k-4w-Ope"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Заново"/>
+                                        <connections>
+                                            <action selector="buttonReset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SxG-Um-Cle"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Unr-e5-a5r">
+                                        <rect key="frame" x="0.0" y="1" width="140" height="60"/>
+                                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="SQF-Oh-LpL"/>
+                                            <constraint firstAttribute="width" constant="140" id="anf-RP-T0p"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="результат">
+                                                <attributes>
+                                                    <font key="NSFont" size="28" name=".SFNSDisplay-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="truncatingTail" baseWritingDirection="natural" lineHeightMultiple="1.5" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="62i-T6-nIS" secondAttribute="trailing" id="3Sf-4m-fLf"/>
+                                    <constraint firstItem="M8E-au-nDW" firstAttribute="top" secondItem="HyK-TT-82U" secondAttribute="bottom" constant="8" id="4QR-p7-yr8"/>
+                                    <constraint firstAttribute="trailing" secondItem="HyK-TT-82U" secondAttribute="trailing" id="9ua-WO-bWn"/>
+                                    <constraint firstAttribute="height" constant="137" id="B9d-iA-O4u"/>
+                                    <constraint firstItem="Unr-e5-a5r" firstAttribute="leading" secondItem="DgG-fn-kDc" secondAttribute="leading" id="Bbj-gz-8LT"/>
+                                    <constraint firstItem="HyK-TT-82U" firstAttribute="top" secondItem="DgG-fn-kDc" secondAttribute="top" constant="1" id="Ma5-Xg-vS2"/>
+                                    <constraint firstItem="vYU-dF-crO" firstAttribute="top" secondItem="Unr-e5-a5r" secondAttribute="bottom" constant="8" id="PID-Ut-wIM"/>
+                                    <constraint firstItem="62i-T6-nIS" firstAttribute="leading" secondItem="DgG-fn-kDc" secondAttribute="leading" id="SR4-wc-jHb"/>
+                                    <constraint firstAttribute="trailing" secondItem="M8E-au-nDW" secondAttribute="trailing" id="TVB-gn-LBs"/>
+                                    <constraint firstItem="62i-T6-nIS" firstAttribute="top" secondItem="M8E-au-nDW" secondAttribute="bottom" constant="8" id="Vn9-8a-4MU"/>
+                                    <constraint firstAttribute="width" constant="288" id="XjR-Mw-N3Q"/>
+                                    <constraint firstItem="vYU-dF-crO" firstAttribute="leading" secondItem="DgG-fn-kDc" secondAttribute="leading" id="hRb-WS-AbT"/>
+                                    <constraint firstItem="Unr-e5-a5r" firstAttribute="top" secondItem="DgG-fn-kDc" secondAttribute="top" constant="1" id="sk4-kI-l47"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DgG-fn-kDc" firstAttribute="centerX" secondItem="GLA-lL-OcT" secondAttribute="centerX" id="6oc-ZH-odW"/>
+                            <constraint firstItem="GLA-lL-OcT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AyE-tE-Wgz"/>
+                            <constraint firstAttribute="trailing" secondItem="GLA-lL-OcT" secondAttribute="trailing" id="BRY-GH-Wz3"/>
+                            <constraint firstItem="GLA-lL-OcT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="33" id="HYf-D2-Bkz"/>
+                            <constraint firstItem="DgG-fn-kDc" firstAttribute="top" secondItem="GLA-lL-OcT" secondAttribute="bottom" constant="22" id="o2i-BR-Qg7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fieldInput" destination="vYU-dF-crO" id="gSl-3v-aA2"/>
+                        <outlet property="labelCounter" destination="HyK-TT-82U" id="xey-Cv-rEQ"/>
+                        <outlet property="labelResult" destination="Unr-e5-a5r" id="cjG-zQ-dri"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="122"/>
+        </scene>
+    </scenes>
+</document>
